@@ -30,18 +30,19 @@
             <section>
                 <h2 id="welcome-banner">Welcome to the City Of CITY NAME HERE</h2>
                 <div id="image-container">
-                    <img id="geography-img" class="splashImg" src="" alt="" />
-                    <img id="architecture-img" class="splashImg" src="" alt="" />
-                    <img id="weather-img" class="splashImg" src="" alt="" />
+                    <img id="geography-img" class="splashImg" src="./assets/placeholderImg.png" alt="" />
+                    <img id="architecture-img" class="splashImg" src="./assets/placeholderImg.png" alt="" />
+                    <img id="weather-img" class="splashImg" src="./assets/placeholderImg.png" alt="" />
                 </div>
-                <h3>Proposed City Slogans</h3>
+                <h3 id="slogan-banner">Proposed City Slogans</h3>
                 <div id="slogan-location"></div>
             </section>
-            <section>
+            <section id="user-customization-section">
+              <hr />
                 <div id="img-select-container">
                     <div>
                         <select id="geography-select">
-                            <option value="">--Select Geography--</option>
+                            <option value="placeholder">--Select Geography--</option>
                             <option value="Mountain">Mountain</option>
                             <option value="Plains">Plains</option>
                             <option value="Tundra">Tundra</option>
@@ -67,13 +68,14 @@
                 </div>
             </br>
                 <div id="text-input-container">
+                  <div class="text-input-sub-container">
                     <input type="text" name="" id="city-textbox" />
-
                     <button id="city-button">Change City Name</button>
-
+                  </div>
+                  <div class="text-input-sub-container">
                     <input type="text" name="" id="slogan-textbox" />
-
                     <button id="slogan-button">Propose New Slogan</button>
+                  </div>
                 </div>
             </section>
         </main>

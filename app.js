@@ -26,10 +26,14 @@ let citySlogans = [];
 
 /* Events */
 geographySelect.addEventListener('change', (e) => {
-    geographyChangeCounter++;
-    const geographyValue = e.target.value;
-    geographyImg.src = `./assets/${geographyValue}-geography.jpeg`;
-    displayStats();
+    if (e.target.value === 'placeholder') {
+        geographyImg.src = './assets/placeholderImg.png';
+    } else {
+        geographyChangeCounter++;
+        const geographyValue = e.target.value;
+        geographyImg.src = `./assets/${geographyValue}-geography.jpeg`;
+        displayStats();
+    }
 });
 
 architectureSelect.addEventListener('change', (e) => {
