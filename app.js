@@ -46,11 +46,18 @@ weatherSelect.addEventListener('change', (e) => {
     displayStats();
 });
 
-cityButton.addEventListener('click', (e) => {});
+cityButton.addEventListener('click', (e) => {
+    welcomeBanner.textContent = ` Welcome to City of ${cityTextbox.value}!`;
+    cityTextbox.value = '';
+});
 
 sloganButton.getElementById('click', (e) => {});
 
 /* Display Functions */
-function displayStats() {}
+function displayStats() {
+    geographyCounterDisplay.textContent = geographyChangeCounter;
+    architectureCounterDisplay.textContent = architectureChangeCounter;
+    weatherCounterDisplay.textContent = weatherChangeCounter;
+}
 function displaySlogans() {}
 // (don't forget to call any display functions you want to run on page load!)
