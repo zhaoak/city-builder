@@ -36,11 +36,6 @@ cityButton.addEventListener('click', (e) => {});
 sloganButton.getElementById('click', (e) => {});
 
 /* Display Functions */
-displayStats() {
-
-};
-
-displaySlogans() {
-
-};
+function displayStats() {}
+function displaySlogans() {}
 // (don't forget to call any display functions you want to run on page load!)
