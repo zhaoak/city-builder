@@ -51,7 +51,11 @@ cityButton.addEventListener('click', (e) => {
     cityTextbox.value = '';
 });
 
-sloganButton.getElementById('click', (e) => {});
+sloganButton.addEventListener('click', (e) => {
+    citySlogans.push(sloganTextbox.value);
+    sloganTextbox.value = '';
+    displaySlogans();
+});
 
 /* Display Functions */
 function displayStats() {
@@ -59,5 +63,12 @@ function displayStats() {
     architectureCounterDisplay.textContent = architectureChangeCounter;
     weatherCounterDisplay.textContent = weatherChangeCounter;
 }
-function displaySlogans() {}
+function displaySlogans() {
+    sloganLocation.textContent = '';
+    for (let slogan of citySlogans) {
+        const sloganDisplay = document.createElement('p');
+        sloganDisplay.textContent = slogan;
+        sloganLocation.append(sloganDisplay);
+    }
+}
 // (don't forget to call any display functions you want to run on page load!)
