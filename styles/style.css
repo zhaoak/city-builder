@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    background-color: lightgray;
+}
+
+.splashImg {
+    height: 20%;
+    width: 25%;
+    border: thick double darkgray;
+}
+
+#welcome-banner {
+    font-family: cursive, monospace;
+    font-size: 2em;
+}
+
+#slogan-banner {
+    font-family: cursive, monospace;
+    text-decoration-line: underline;
+    font-size: 1.5em;
+}
+
+#slogan-location {
+    font-family: cursive, monospace;
+    font-size: 1.15em;
+}
+
+#image-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 30%;
+}
+
+#user-customization-section {
+    position: relative;
+    top: 40%;
+    padding-bottom: 3%;
+}
+
+#img-select-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#text-input-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
