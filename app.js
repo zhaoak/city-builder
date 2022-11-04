@@ -1,6 +1,8 @@
 /* Imports */
 
 /* Get DOM Elements */
+const welcomeBanner = document.getElementById('welcome-banner');
+const sloganLocation = document.getElementById('slogan-location');
 
 /* State */
 
