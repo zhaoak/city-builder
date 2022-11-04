@@ -25,11 +25,26 @@ let cityName = 'CITY NAME HERE';
 let citySlogans = [];
 
 /* Events */
-geographySelect.addEventListener('change', (e) => {});
+geographySelect.addEventListener('change', (e) => {
+    geographyChangeCounter++;
+    const geographyValue = e.target.value;
+    geographyImg.src = `./assets/${geographyValue}-geography.jpeg`;
+    displayStats();
+});
 
-architectureSelect.addEventListener('change', (e) => {});
+architectureSelect.addEventListener('change', (e) => {
+    architectureChangeCounter++;
+    const architectureValue = e.target.value;
+    architectureImg.src = `./assets/${architectureValue}-architecture.jpeg`;
+    displayStats();
+});
 
-weatherSelect.addEventListener('change', (e) => {});
+weatherSelect.addEventListener('change', (e) => {
+    weatherChangeCounter++;
+    const weatherValue = e.target.value;
+    weatherImg.src = `./assets/${weatherValue}-climate.jpeg`;
+    displayStats();
+});
 
 cityButton.addEventListener('click', (e) => {});
 
