@@ -19,7 +19,7 @@
         <!-- css -->
         <link rel="stylesheet" href="styles/reset.css" />
         <link rel="stylesheet" href="styles/global.css" />
-        <!-- add link for page specific css -->
+        <link rel="stylesheet" href="styles/style.css" />
     </head>
 
     <body>
@@ -39,19 +39,24 @@
             </section>
             <section>
                 <div>
-                    <div><select id="geography-select">
-                        <option>
-                        </option>
+                    <div>
+                        <select id="geography-select">
+                        <option value="value1">value1</option>
+                        </select>
+                        <p>Changes: <span id="geography-changes">0</span></p>
                     </div>
                     <div><select id="architecture-select">
-                        <option></option>
+                        <option value="value1">value1</option>
+                    </select>
+                    <p>Changes: <span id="architecture-changes">0</span></p>
                     </div>
                     <div><select id="weather-select">
-                        <option>
-
-                        </option>
+                        <option value="value1">value1</option>
+                    </select>
+                    <p>Changes: <span id="weather-changes">0</span></p>
                     </div>
                 </div>
+            </br>
                 <div>
                     <input type="text" name="" id="city-textbox" />
 

@@ -7,8 +7,11 @@ const architectureImg = document.getElementById('architecture-img');
 const weatherImg = document.getElementById('weather-img');
 const sloganLocation = document.getElementById('slogan-location');
 const geographySelect = document.getElementById('geography-select');
+const geographyCounterDisplay = document.getElementById('geography-changes');
 const architectureSelect = document.getElementById('architecture-select');
+const architectureCounterDisplay = document.getElementById('architecture-changes');
 const weatherSelect = document.getElementById('weather-select');
+const weatherCounterDisplay = document.getElementById('weather-changes');
 const cityTextbox = document.getElementById('city-textbox');
 const cityButton = document.getElementById('city-button');
 const sloganTextbox = document.getElementById('slogan-textbox');
@@ -34,7 +37,7 @@ sloganButton.getElementById('click', (e) => {});
 
 /* Display Functions */
 displayStats() {
-    
+
 };
 
 displaySlogans() {
