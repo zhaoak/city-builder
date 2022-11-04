@@ -47,7 +47,7 @@ weatherSelect.addEventListener('change', (e) => {
 });
 
 cityButton.addEventListener('click', (e) => {
-    welcomeBanner.textContent = ` Welcome to City of ${cityTextbox.value}!`;
+    welcomeBanner.textContent = ` Welcome to the City Of ${cityTextbox.value}!`;
     cityTextbox.value = '';
 });
 
