@@ -27,16 +27,18 @@ let citySlogans = [];
 /* Events */
 geographySelect.addEventListener('change', (e) => {
     if (e.target.value === 'placeholder') {
-        geographyImg.src = './assets/placeholderImg.png';
-    } else {
-        geographyChangeCounter++;
-        const geographyValue = e.target.value;
-        geographyImg.src = `./assets/${geographyValue}-geography.jpeg`;
-        displayStats();
+        return;
     }
+    geographyChangeCounter++;
+    const geographyValue = e.target.value;
+    geographyImg.src = `./assets/${geographyValue}-geography.jpeg`;
+    displayStats();
 });
 
 architectureSelect.addEventListener('change', (e) => {
+    if (e.target.value === 'placeholder') {
+        return;
+    }
     architectureChangeCounter++;
     const architectureValue = e.target.value;
     architectureImg.src = `./assets/${architectureValue}-architecture.jpeg`;
@@ -44,6 +46,9 @@ architectureSelect.addEventListener('change', (e) => {
 });
 
 weatherSelect.addEventListener('change', (e) => {
+    if (e.target.value === 'placeholder') {
+        return;
+    }
     weatherChangeCounter++;
     const weatherValue = e.target.value;
     weatherImg.src = `./assets/${weatherValue}-climate.jpeg`;
@@ -71,7 +76,7 @@ function displaySlogans() {
     sloganLocation.textContent = '';
     for (let slogan of citySlogans) {
         const sloganDisplay = document.createElement('p');
-        sloganDisplay.textContent = slogan;
+        sloganDisplay.textContent = '"' + slogan + '"';
         sloganLocation.append(sloganDisplay);
     }
 }

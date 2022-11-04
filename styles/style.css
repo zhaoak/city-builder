@@ -11,11 +11,13 @@ body {
 
 #welcome-banner {
     font-family: cursive, monospace;
+    font-size: 2em;
 }
 
 #slogan-banner {
-  font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-family: cursive, monospace;
+    text-decoration-line: underline;
+    font-size: 1.5em;
 }
 
 #slogan-location {
@@ -29,13 +31,12 @@ body {
     justify-content: space-around;
     align-items: flex-start;
     height: 30%;
-    position: relative;
 }
 
 #user-customization-section {
-  position: relative;
-  top: 40%;
-  padding-bottom: 3%;
+    position: relative;
+    top: 40%;
+    padding-bottom: 3%;
 }
 
 #img-select-container {
