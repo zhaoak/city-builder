@@ -15,9 +15,29 @@ const sloganTextbox = document.getElementById('slogan-textbox');
 const sloganButton = document.getElementById('slogan-button');
 
 /* State */
+let geographyChangeCounter = 0;
+let architectureChangeCounter = 0;
+let weatherChangeCounter = 0;
+let cityName = 'CITY NAME HERE';
+let citySlogans = [];
 
 /* Events */
+geographySelect.addEventListener('change', (e) => {});
+
+architectureSelect.addEventListener('change', (e) => {});
+
+weatherSelect.addEventListener('change', (e) => {});
+
+cityButton.addEventListener('click', (e) => {});
+
+sloganButton.getElementById('click', (e) => {});
 
 /* Display Functions */
+displayStats() {
+    
+};
 
+displaySlogans() {
+
+};
 // (don't forget to call any display functions you want to run on page load!)
